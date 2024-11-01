@@ -1,0 +1,40 @@
+/* Order page style */
+.etn-ticket-details {
+	margin-top: 10px;
+}
+.etn-ticket-details .ticket-details__title {
+	margin: 0;
+}
+.etn-ticket-details .single-ticket-details__title {
+	margin: 0;
+	font-weight: bold;
+}
+.etn-ticket-details .single-ticket-seats__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+.etn-ticket-details .single-ticket-seats__list li {
+	font-weight: normal;
+	font-size: 14px;
+	margin: 0;
+}
+.etn-ticket-details .single-ticket-details {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-bottom: 4px;
+}
+
+.woocommerce-checkout-review-order-table .product-name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.woocommerce-checkout-review-order-table .product-name > a {
+	flex: 0 0 100%;
+}

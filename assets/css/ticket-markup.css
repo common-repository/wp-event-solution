@@ -1,0 +1,452 @@
+/* event ticket-markup css */
+:root {
+	--ticket_border_color: #d8d9df;
+	--ticket_primary_color: #5d5dff;
+	--ticket_secondary_color: #0d165e;
+}
+
+.etn-ticket-main-wrapper {
+	max-width: 610px;
+	width: 98%;
+	height: auto;
+	margin: 20px auto;
+	border-radius: 14px;
+	padding: 20px;
+	border: 1px solid var(--ticket_border_color);
+}
+
+.etn-ticket-wrapper {
+	padding-bottom: 20px;
+}
+.etn-ticket {
+	display: flex;
+	flex-direction: column;
+}
+
+.etn-ticket-logo-wrapper {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.logo-shape {
+	display: flex;
+	justify-content: space-between;
+	max-width: 300px;
+	margin: auto;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.logo-bar {
+	border-bottom: 1px solid var(--ticket_border_color);
+	display: inline-block;
+	width: 100%;
+	margin: 0px 5px;
+}
+
+.logo-bar.bar-two {
+	width: 18px;
+	height: 8px;
+	background: var(--ticket_border_color);
+	transform: rotate(45deg);
+	border: none;
+}
+
+.etn-ticket-head {
+	border-bottom: 2px dashed var(--ticket_border_color);
+	margin-bottom: 15px;
+}
+
+.etn-ticket-head-title {
+	color: var(--ticket_secondary_color);
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+	line-height: 1.2;
+	padding: 0;
+}
+
+.etn-ticket-head-time {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.etn-ticket-body-top-ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.etn-ticket-body-top-li {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--ticket_secondary_color);
+	margin-bottom: 10px;
+	flex: 0 0 50%;
+}
+
+.etn-ticket-body-top-li span {
+	font-weight: normal;
+}
+
+.etn-ticket-body-top-ul .flex-100 {
+	flex: 0 0 100%;
+}
+
+.etn-ticket-body-top-li p {
+	font-size: 15px;
+	font-weight: 400;
+	color: #656975;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.etn-ticket-qr-code {
+	text-align: center;
+	border-radius: 14px;
+	font-weight: 700;
+	color: var(--ticket_secondary_color);
+}
+
+.etn-ticket-qr-code img {
+	border: 2px solid var(--ticket_secondary_color);
+	border-radius: 14px;
+}
+
+.etn-download-ticket {
+	text-align: center;
+	margin: 30px auto;
+	max-width: 610px;
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.etn-download-ticket .etn-download-ticket-btn,
+.etn-download-ticket .etn-print-ticket-btn {
+	background-color: var(--ticket_primary_color);
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	border: 1px solid var(--ticket_primary_color);
+	border-radius: 6px;
+	width: 100%;
+}
+
+.etn-download-ticket .etn-print-ticket-btn {
+	background-color: #fff;
+	color: var(--ticket_primary_color);
+	margin-right: 20px;
+}
+
+.etn-qrImage {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+/* Custom CSS moved here */
+
+#qr-video {
+	width: 100% !important;
+}
+
+@media (min-width: 1200px) {
+	#qr-video {
+		height: calc(100% - 200px) !important;
+	}
+}
+
+.loader-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ddd;
+	width: 100%;
+	height: 100%;
+}
+
+.loader-wrapper img {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+
+.etn-scan-svg {
+	width: 188px;
+	margin-bottom: -30px;
+	margin-top: -30px;
+}
+
+.etn-ticket-modal-content {
+	padding: 15px;
+}
+
+#scan_response_msg {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #232323;
+	margin: 0 0 20px;
+}
+
+.scan-another-btn,
+.scan-cancel-btn {
+	font-size: 14px;
+}
+
+.scan-cancel-btn.etn-btn.etn-btn-primary {
+	font-weight: 400;
+	padding: 9px 15px;
+	margin-top: 15px;
+	border-radius: 12px;
+}
+
+.scan-another-btn.etn-btn.etn-btn-border:hover,
+.scan-another-btn.etn-btn.etn-btn-border:focus {
+	background-color: transparent;
+
+}
+
+.etn-ticket-scan-stop-button.etn-btn.etn-btn-border:hover,
+.etn-ticket-scan-stop-button.etn-btn.etn-btn-border:focus {
+	background-color: transparent;
+	outline: none;
+
+}
+
+.etn-ticket-scan-start-button.etn-btn.etn-btn-primary {
+	padding: 2px 66px;
+	border-radius: 6px;
+}
+
+.etn-ticket-scan-stop-button.etn-btn.etn-btn.etn-border {
+	font-weight: 700;
+	/* padding: 4px 66px;
+    border-radius: 6px; */
+	padding: 2px 66px;
+	border-radius: 6px;
+
+}
+
+.etn-ticket-scan-back-button.etn-btn.etn-btn-primary {
+	padding: 4px 20px;
+	margin-top: 10px;
+}
+
+.scan-another-btn {
+	background-color: #ccc;
+	color: black;
+	border-color: transparent;
+}
+
+.scan-cancel-btn {
+	background-color: #5D78FF;
+	color: #fff;
+}
+
+
+.ticket-popup-container {
+	padding: 25px;
+	text-align: center;
+	background-color: #fefefe;
+	margin: auto;
+	max-width: 388px;
+	border-radius: 10px;
+}
+
+
+.etn-ticket-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #474e5d;
+	padding-top: 50px;
+}
+
+.etn-ticket-btn-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.etn-ticket-btn-wrapper .etn-btn {
+	border-radius: 10px;
+}
+
+
+
+.etn-ticket-modal.faild-ticket .success-icon,
+.etn-ticket-modal.faild-ticket .warning-icon,
+.etn-ticket-modal.faild-ticket .question-icon,
+
+.etn-ticket-modal.success-green .danger-icon,
+.etn-ticket-modal.success-green .warning-icon,
+.etn-ticket-modal.success-green .question-icon,
+
+.etn-ticket-modal.warning-yellow .danger-icon,
+.etn-ticket-modal.warning-yellow .success-icon,
+.etn-ticket-modal.warning-yellow .question-icon,
+
+.etn-ticket-modal.question-icon .danger-icon,
+.etn-ticket-modal.question-icon .success-icon,
+.etn-ticket-modal.question-icon .warning-icon,
+
+.etn-ticket-modal.icon-remove .etn-scan-svg {
+	display: none
+}
+
+
+.etn-scanner-btn-container {
+	text-align: center;
+	padding: 10px;
+
+}
+
+.etn-scanner-btn-container .etn-btn.etn-btn-border,
+.etn-ticket-modal .etn-btn.etn-btn-border {
+	text-transform: capitalize;
+	padding: 4px 55px;
+	border-radius: 10px;
+}
+
+.etn-scanner-btn-container .etn-btn.etn-btn-border:hover,
+.etn-ticket-modal .etn-btn.etn-btn-border:hover {
+	background-color: transparent;
+
+}
+
+.etn-scanner-btn-container .etn-btn.etn-btn-border,
+.etn-ticket-modal .etn-btn.etn-btn-border {
+	text-transform: capitalize;
+	padding: 4px 55px;
+	background-color: transparent;
+	font-weight: 400;
+	margin-top: 12px;
+	border-radius: 10px;
+
+}
+
+.etn-scanner-btn-container .etn-btn.etn-btn-primary,
+.etn-ticket-modal .etn-btn.etn-btn-primary {
+	text-transform: capitalize;
+	padding: 5px 55px;
+	font-weight: 400;
+	border-radius: 10px;
+}
+
+.etn-scanner-btn-container .etn-btn.etn-btn-primary,
+.etn-ticket-modal .etn-btn.etn-btn-primary,
+.etn-scanner-btn-container .etn-btn.etn-btn-border,
+.etn-ticket-modal .etn-btn.etn-btn-border {
+	min-width: 230px;
+}
+
+/* ticket info */
+.scanner-ticket-info {
+	text-align: left;
+	padding: 30px;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.scanner-ticket-info .scaner-ticket-title {
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+
+.scaner-ticket-atendee-name,
+.scaner-ticket-type {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 8px;
+}
+
+/* ticket style 2 */
+
+.etn-ticket-wrapper *,
+.etn-ticket-wrapper *:after,
+.etn-ticket-wrapper *:before {
+    box-sizing: border-box;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-main-wrapper {
+	max-width: 810px;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-body-top-ul {
+	display: block;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .ticket-left-side {
+	flex: 0 0 40%;
+	max-width: 40%;
+	padding-right: 30px;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-logo-wrapper {
+	padding-bottom: 30px;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-content {
+	flex: 0 0 60%;
+	max-width: 60%;
+	padding-left: 30px;
+	border-left: 1px solid #eaeaea;
+}
+
+
+
+.etn-ticket-wrapper.ticket-style-2 .etn-qrImage {
+	width: 100%;
+	height: auto;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-main-wrapper {
+	padding: 0;
+	border: none;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-body-top-li p,
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-body-top-li span {
+	font-size: 14px;
+	font-weight: 500;
+	color: #0d165e;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-body-top-li,
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-body-top-li p.etn-ticket-id {
+	font-size: 14px;
+	font-weight: 500;
+	color: #11142E;
+}
+
+.etn-ticket-wrapper.ticket-style-2 .etn-ticket-head {
+	margin-bottom: 30px;
+	padding-bottom: 20px
+}

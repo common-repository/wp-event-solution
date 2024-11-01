@@ -1,0 +1,181 @@
+/*
+ * Instruction: If you generate new icon 
+ * make your you have added a class "etn-icon" with the social brand icon 
+ * example ".etn-icon.fa-google::before{}"
+*/
+@font-face {
+	font-family: etn-icon;
+	src: url("../fonts/etn-icon.ttf?k9yrwb") format("truetype"),
+		url("../fonts/etn-icon.woff?k9yrwb") format("woff"),
+		url("../fonts/etn-icon.svg?k9yrwb#etn-icon") format("svg");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+.etn-icon {
+	font-family: etn-icon !important;
+	speak: never;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.etn-angle-down:before {
+	content: "\e928";
+}
+.etn-money-bill:before {
+	content: "\e926";
+}
+.etn-clock:before {
+	content: "\e924";
+}
+.etn-eye:before {
+	content: "\e90c";
+}
+.etn-eye-slash:before {
+	content: "\e90e";
+}
+.etn-arrow-right:before {
+	content: "\e910";
+}
+.etn-user-plus:before {
+	content: "\e912";
+}
+.etn-location:before {
+	content: "\e914";
+}
+.etn-calendar:before {
+	content: "\e916";
+}
+.etn-plus:before {
+	content: "\e918";
+}
+.etn-minus:before {
+	content: "\e91a";
+}
+.etn-arrow-left:before {
+	content: "\e91c";
+}
+.etn-envelope:before {
+	content: "\e91e";
+}
+.etn-link:before {
+	content: "\e920";
+}
+.etn-share:before {
+	content: "\e922";
+}
+.etn-icon.fa-facebook-square:before {
+	content: "\e900";
+}
+.etn-icon.fa-facebook-f:before {
+	content: "\e901";
+}
+.etn-icon.fa-facebook-messenger:before {
+	content: "\e902";
+}
+.etn-icon.fa-facebook:before {
+	content: "\e903";
+}
+.etn-icon.fa-linkedin:before {
+	content: "\e904";
+}
+.etn-icon.fa-linkedin-in:before {
+	content: "\e905";
+}
+.etn-icon.fa-twitter:before {
+	content: "\e906";
+}
+.etn-icon.fa-x-twitter:before {
+	content: "\e932";
+}
+.etn-icon.fa-twitter-square:before {
+	content: "\e907";
+}
+.etn-icon.fa-uber:before {
+	content: "\e908";
+}
+.etn-icon.fa-google:before {
+	content: "\e909";
+}
+.etn-icon.fa-google-drive:before {
+	content: "\e90a";
+}
+.etn-icon.fa-google-play:before {
+	content: "\e90b";
+}
+.etn-icon.fa-google-wallet:before {
+	content: "\e90d";
+}
+.etn-icon.fa-whatsapp-square:before {
+	content: "\e90f";
+}
+.etn-icon.fa-whatsapp:before {
+	content: "\e911";
+}
+.etn-icon.fa-wordpress-simple:before {
+	content: "\e913";
+}
+.etn-icon.fa-wordpress:before {
+	content: "\e915";
+}
+.etn-icon.fa-youtube-square:before {
+	content: "\e917";
+}
+.etn-icon.fa-youtube:before {
+	content: "\e919";
+}
+.etn-icon.fa-xbox:before {
+	content: "\e91b";
+}
+.etn-icon.fa-vk:before {
+	content: "\e91d";
+}
+.etn-icon.fa-vnv:before {
+	content: "\e91f";
+}
+.etn-icon.fa-instagram:before {
+	content: "\e921";
+}
+.etn-icon.fa-reddit:before {
+	content: "\e923";
+}
+.etn-icon.fa-reddit-square:before {
+	content: "\e925";
+}
+.etn-icon.fa-reddit-alien:before {
+	content: "\e927";
+}
+.etn-icon.fa-pinterest-square:before {
+	content: "\e929";
+}
+.etn-icon.fa-pinterest-p:before {
+	content: "\e92a";
+}
+.etn-icon.fa-pinterest:before {
+	content: "\e92b";
+}
+.etn-icon.fa-tumblr:before {
+	content: "\e92c";
+}
+.etn-icon.fa-tumblr-square:before {
+	content: "\e92d";
+}
+.etn-icon.fa-meetup:before {
+	content: "\e92e";
+}
+.etn-icon.fa-vimeo-v:before {
+	content: "\e92f";
+}
+.etn-icon.fa-weixin:before {
+	content: "\e930";
+}
+.etn-icon.fa-flickr:before {
+	content: "\e931";
+}
+.etn-icon.x-twitter:before {
+	content: "\e932";
+}
